@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2 class="heading--2">Expense Tracker</h2>
+
+    <div class="container">
+      <div class="container_balance">
+        <h4 class="heading--balance">TOTAL BALANCE</h4>
+        <h3 id="balance" class="balance">$500</h3>
+      </div>
+
+      <div class="container_trans">
+        <div class="trans_income">
+          <h4 class="heading--4">INCOME</h4>
+          <div id="money_add " class="money_add">$200</div>
+        </div>
+        <div class="trans_expense">
+          <h4 class="heading--4">EXPENSE</h4>
+          <div id="money_sub" class="money_sub">$200</div>
+        </div>
+      </div>
+
+      <!-- History start -->
+      <div class="container_history">
+        <p class="heading--p">HISTORY</h4>
+
+        <ul class="list" id="list">
+          <li class="sub">
+            Food <span class="date">"date"</span> <span>$500 </span
+            ><button class="btn--delet">
+              <ion-icon class="delet-icon" name="trash-outline"></ion-icon>
+            </button>
+          </li>
+          <li class="add">
+            Food <span>$500 </span
+            ><button class="btn--delet">
+              <ion-icon class="delet-icon" name="trash-outline"></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Add new trans start -->
+      <div class="container_add-trans">
+        <p class="heading--p">ADD NEW TRANSACTION</h4>
+
+        <form id="form" class="form">
+            <div class="form-text-area">
+
+                <div class="form__text">
+                    <label for="text">Text</label>
+                    <input type="text" id="text" placeholder="Enter text" />
+                </div>
+                <div class="form__amount">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" placeholder="Enter amount" />
+                </div>
+               
+            </div>
+            <div class="form__date">
+              <label for="date">Date</label>
+              <input type="date" id="date" placeholder="" />
+          </div>
+          <button class="form-btn">Add Transaction</button>
+        </form>
+      </div>
+      <!-- main container end -->
+    </div>
+  </body>
+</html>
